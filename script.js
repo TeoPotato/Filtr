@@ -85,9 +85,9 @@ function funkyFilter() {
 
 function vintageFilter() {
 	resetImage();
-	brightnessSlider.value = 120;
+	contrastSlider.value = 150;
 	saturateSlider.value = 120;
-	sepiaSlider.value = 150;
+	hueRotateSlider.value = 330;
 	applyFilter();
 
 function cinematicFilter() {
