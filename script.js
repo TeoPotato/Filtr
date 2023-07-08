@@ -124,3 +124,14 @@ function saveImage() {
 	// Click on the link to start the download
 	linkElement.click();
 }
+
+function copyToClipboard(img) {
+  const type = 'image/png';
+  const blob = new Blob([img], {type});
+  const data = [new ClipboardItem({[type]: blob})];
+  navigator.clipboard.write(data).then(function() {
+    console.log('Copied to clipboard!');
+  }, function() {
+    console.log('Failed to copy to clipboard.');
+  });
+}
