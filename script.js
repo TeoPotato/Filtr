@@ -90,10 +90,6 @@ function vintageFilter() {
 	hueRotateSlider.value = 330;
 	applyFilter();
 
-function cinematicFilter() {
-	resetImage();
-	hueRotateSlider.value = 340;
-	applyFilter();
 }
 // Reset all the slider values to there default values
 function resetImage() {
