@@ -85,11 +85,10 @@ function funkyFilter() {
 
 function vintageFilter() {
 	resetImage();
-	contrastSlider.value = 150;
+	brightnessSlider.value = 120;
 	saturateSlider.value = 120;
-	hueRotateSlider.value = 330;
+	sepiaSlider.value = 150;
 	applyFilter();
-
 }
 // Reset all the slider values to there default values
 function resetImage() {
