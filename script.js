@@ -126,6 +126,7 @@ function saveImage() {
 }
 
 function copyToClipboard(img) {
+	let canvasData = canvas.toDataURL("image/png")
   const type = 'image/png';
   const blob = new Blob([img], {type});
   const data = [new ClipboardItem({[type]: blob})];
